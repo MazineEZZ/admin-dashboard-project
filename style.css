@@ -102,7 +102,7 @@ body {
 }
 
 .main-content header {
-  height: 20%;
+  height: 200px;
   padding: 1rem 3rem;
   background-color: var(--main-header-bgcolor);
   box-shadow: 2px 5px 5px var(--shadow-color);
@@ -206,7 +206,7 @@ body {
 
 .main-content main {
   overflow: auto;
-  height: 80%;
+  height: 100%;
   padding: 30px 20px;
   display: grid;
   grid-template-columns: 3fr 1fr;
