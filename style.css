@@ -26,8 +26,9 @@
   --main-btn-hover-bgcolor: #1479af;
   --main-card-bgcolor: #fff;
   --main-card-strip-color: #f0b429;
+  --main-card-strip2-color: #e5e5e5;
 
-  --shadow-color: #ccd1d9;
+  --shadow-color: #babfc7;
 }
 
 html {
@@ -113,6 +114,10 @@ body {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.main-content .menu-nav {
+  font-size: 1.3rem;
 }
 
 .main-content .menu-nav .search {
@@ -201,7 +206,7 @@ body {
   padding: 30px 20px;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 20px;
+  gap: 25px;
 }
 
 .main-content main p {
@@ -215,7 +220,7 @@ body {
   grid-row: span 2;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .main-content main h4 {
@@ -226,9 +231,9 @@ body {
 
 .main-content .projects-container .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-auto-rows: 250px;
-  gap: 20px;
+  gap: 25px;
 }
 
 .main-content .projects-container .card {
@@ -236,6 +241,7 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
+  box-shadow: 0px 5px 5px var(--shadow-color);
 }
 
 .main-content .projects-container .card .strip {
@@ -268,8 +274,8 @@ body {
 
 .main-content .projects-container .card .controls button {
   background-color: transparent;
-  width: 2.5em;
-  height: 2.5em;
+  width: 2.8em;
+  height: 2.8em;
   border-radius: 50%;
   border: none;
   transition: 0.3s;
@@ -286,13 +292,71 @@ body {
 .main-content .left-side {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .main-content .announcements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-content .left-side .wrapper {
+  background-color: var(--main-card-bgcolor);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px var(--shadow-color);
+}
+
+.main-content .announcements-container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main-content .announcements-container .card .title {
+  font-family: "Roboto bold";
+  color: var(--main-title-font-color);
+}
+
+.main-content .announcements-container .strip {
+  background-color: var(--main-card-strip2-color);
+  height: 3px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 100%;
 }
 
 .main-content .trending-container {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+.main-content .trending-container .wrapper {
+  gap: 20px;
+}
+
+.main-content .trending-container .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-content .trending-container .user img {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.main-content .trending-container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main-content .trending-container .username {
+  color: var(--main-title-font-color);
+  font: bold;
+}
